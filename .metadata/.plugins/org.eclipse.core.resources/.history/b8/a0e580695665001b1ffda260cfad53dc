@@ -1,0 +1,5 @@
+package com.mdc99.apigateway.AdempAreaService.controller;
+
+public class ControllerAdemp {
+
+}

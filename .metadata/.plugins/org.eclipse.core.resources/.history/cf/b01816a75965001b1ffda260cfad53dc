@@ -1,0 +1,32 @@
+server:
+  port: 8085
+spring:
+  application:
+    name: zuul-gateway
+
+zuul:
+  ribbon:
+    eager-load:
+      enabled: true
+  routes:
+    oauth-demo:
+      sensitiveHeaders:
+      path: /oauth/**
+      stripPrefix: false
+      serviceId: ouath-server
+    adempareaservice:
+      sensitiveHeaders:
+      path: /ademp/**
+      stripPrefix: false
+      serviceId: ademp-area-service
+    claimsareaservice:
+      sensitiveHeaders:
+      path: /claims/**
+      stripPrefix: false
+      serviceId: claims-area-service
+    afternoonservice:
+      sensitiveHeaders:
+      path: /noon/**
+      stripPrefix: false
+      serviceId: good-afternoon
+

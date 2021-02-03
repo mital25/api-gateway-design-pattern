@@ -1,0 +1,14 @@
+select * from t_user;
+select * from t_role;
+select * from t_user_roles;
+
+insert into t_user (id, email, first_name, last_name, mobile, password) 
+values (1, "hello@gmail.com", "Guddu", "Pandit", "8888899999", "guddu123")
+insert into t_role (id, description, name) values (1, "Administrator", "ADMIN")
+insert into t_role (id, description, name) values (2, "User", "USER")
+insert into t_user_roles (users_id, roles_id) values (1, 1)
+insert into t_user_roles (users_id, roles_id) values (1, 2)
+
+select * from t_user;
+select * from t_role;
+select * from t_user_roles;

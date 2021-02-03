@@ -1,0 +1,32 @@
+server:
+  port: 8085
+spring:
+  application:
+    name: zuul-gateway
+
+zuul:
+  ribbon:
+    eager-load:
+      enabled: true
+  routes:
+    nooble-security:
+      sensitiveHeaders:
+      path: /oauth/**
+      stripPrefix: false
+      serviceId: oauth-demo
+    morningservice:
+      sensitiveHeaders:
+      path: /morning/**
+      stripPrefix: false
+      serviceId: good-morning
+    eveningservice:
+      sensitiveHeaders:
+      path: /evening/**
+      stripPrefix: false
+      serviceId: good-evening
+    afternoonservice:
+      sensitiveHeaders:
+      path: /noon/**
+      stripPrefix: false
+      serviceId: good-afternoon
+

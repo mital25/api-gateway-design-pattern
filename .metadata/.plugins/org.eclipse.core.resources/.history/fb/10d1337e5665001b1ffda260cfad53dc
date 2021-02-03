@@ -1,0 +1,12 @@
+package com.mdc99.apigateway.AdempAreaService.controller;
+
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class ControllerAdemp {
+	
+	@GetMapping("/noon/message")
+	public String getMessage() {
+		return "Good Afternoon";
+	}
+}

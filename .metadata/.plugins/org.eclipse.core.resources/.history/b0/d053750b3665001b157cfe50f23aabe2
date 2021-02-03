@@ -1,0 +1,9 @@
+package com.mdc99.apigateway.oauthdemo.repository;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import com.mdc99.apigateway.oauthdemo.entity.Role;
+
+public interface RoleRepository extends JpaRepository<Role, Long> {
+
+}

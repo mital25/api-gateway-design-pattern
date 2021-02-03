@@ -1,0 +1,13 @@
+package com.mdc99.apigateway.ClaimsAreaService;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+public class ClaimsAreaServiceApplication {
+
+	public static void main(String[] args) {
+		SpringApplication.run(ClaimsAreaServiceApplication.class, args);
+	}
+
+}
